@@ -1,0 +1,122 @@
+html {
+    height:100%;
+    background-color: rgb(224, 224, 224);
+    
+}
+
+
+.type {
+    display: inline-block;
+    vertical-align: top; 
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: large;
+  }
+  button{
+    background-color: rgb(113, 183, 191); 
+    border: 1px solid  rgb(82, 160, 164);
+    border-radius: 5%;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+.name{
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.topic{
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.level{
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  select {
+    width: 50%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(113, 183, 191);
+    text-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+
+.createAquiz{
+
+    
+    border-radius: 5%;
+    
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+.details{
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Tablet View*/
+@media (max-width: 768px) {
+    .name, .topic, .level, .details {
+      font-size: medium;
+    }
+    input[type=text], select {
+      width: 80%;
+    }
+    .createAquiz {
+      font-size: 1rem;
+    }
+  }
+  
+  /*Mobile View*/
+  @media (max-width: 400px) {
+    .type {
+      display: block;
+      margin: auto;
+    }
+    .name, .topic, .level, .details {
+      font-size: small;
+    }
+    input[type=text], select {
+      width: 100%;
+    }
+    .createAquiz {
+      font-size: 0.8rem;
+    }
+  }

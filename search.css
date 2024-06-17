@@ -1,0 +1,28 @@
+main{ 
+    margin: 0 auto;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3rem;
+    height: 500px;
+}
+
+input[type=text]{
+    padding: 7px 11px;
+    width: 70%;
+}
+
+.txtHint{
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.quizInfo{
+    width: 90%;
+    margin-bottom: 5px;
+    border: 1px solid rgb(51, 51, 51);
+    font-size: 1.75rem;
+    padding: 1rem;
+}

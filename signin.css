@@ -1,0 +1,78 @@
+/* Sign In Page */
+
+main{
+    max-width: 500px;
+    min-height: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 48px;
+    line-height: 1.5rem;
+    color: rgb(51, 51, 51);
+}
+
+main form {
+    margin: 32px;
+    padding: 32px;
+    background-color: rgba(98, 184, 189, 0.2);
+    border: 2px solid black;
+}
+
+main .inputwrapper label{
+    font-size: 1.5rem;
+}
+
+main .inputwrapper input[type=text], main .inputwrapper input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+main input[type=submit]{
+    background-color: rgb(98, 184, 189);
+    color: white;
+    width: 25%;
+    padding: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.5px solid black;
+}
+
+main a{
+    color: rgb(51, 51, 51);
+}
+
+main a:hover{
+    text-shadow: 2px 2px 2px rgba(51, 51, 51, 0.3);
+}
+
+/*Tablet View*/
+@media (max-width: 768px){
+    main h1{
+        font-size: 4rem;
+        line-height: 40px;
+    }
+
+    main h2{
+        font-size: 3rem;
+    }
+
+    main h5{
+        font-size: 1.25rem;
+    }
+
+    main .inputwrapper label{
+        font-size: 1.25rem;
+    }
+
+    main .inputwrapper input[type=text], main .inputwrapper input[type=password]{
+        padding: 6px 12px;
+    }
+
+    main input[type=submit]{
+        width: 20%;
+        padding: 3px;
+        font-size: 0.5rem;
+    }
+}

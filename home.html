@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="home.css"> 
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Dongle&family=Inconsolata:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c8edd320f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+                <div class="logo">
+                    <img src="logo.png" alt="logo">
+                </div>
+
+                <div class="navigation">
+                    <div class="navBtn"><a href="home.html">Home</a></div>
+                    <div class="navBtn"><a href="createQuiz.php">Create</a></div>
+                    <div class="navBtn"><a href="searchbox.html">Search</a></div>
+                    <div class="navBtn"><a href="contact.php">Contact</a></div>
+                </div>
+
+                <!--
+                <div class="search">
+                    <form action="">
+                        <input class="searchbar" type="text" placeholder="&#x1F50E;&#xFE0E;   search...">
+                        <input type="button" value="search">
+                    </form>
+                </div> 
+                -->
+
+                <div class="log">
+                    <div class="signBtn"><a href="signup.php">Sign up</a></div> 
+                    <div class="signBtn"><a href="signin.php">Sign in</a></div>
+                    <div class="signBtn" onclick="location.href='profile.php';" style="cursor: pointer;"> </div> 
+                </div>
+
+                <div class="tablet-wrapper">
+                    <img src="burgermenu.svg" alt="tablet Menu Icon" style="width: 40px;" class="burgermenu">
+
+                    <div class="tablet-nav">
+                        <div class="tabBtn"><a href="home.html">Home</a></div>
+                        <div class="tabBtn"><a href="createQuiz.php">Create</a></div>
+                        <div class="tabBtn"><a href="searchbox.html">Search</a></div>
+                        <div class="tabBtn"><a href="contact.php">Contact</a></div>
+                        <div class="tabBtn"><a href="signin.php">Sign in</a></div>
+                        <div class="tabBtn"><a href="signup.php">Sign up</a></div>
+                        <div class="tabBtn"><a href="profile.php">Profile</a></div>
+                    </div>
+                </div>
+        </nav>
+
+        <header>
+                <div class="headercontent">
+                    <h1>There is always a room <br> for a pop quiz!</h1>
+                    <h3>The biggest platform for creating, sharing, and solving quizzes.</h3>
+                    <a href="signup.php">Sign up and get started</a>
+                </div>
+        </header>
+
+        <main>
+            <form action="quizzes.php" method="GET">
+                <button class="col col1" name="submit" value="math"  style="cursor: pointer;">
+                    <h2 style="font-family: 'Dongle', sans-serif; font-size: 3rem;">Mathematics</h2>
+                    <i class="fa-solid fa-calculator"></i>
+                </button>
+
+                <button class="col col2" name="submit" value="languages"  style="cursor: pointer;">
+                    <h2 style="font-family: 'Dongle', sans-serif; font-size: 3rem;">Languages</h2>
+                    <i class="fa-solid fa-language"></i>
+                </button>
+
+                <button class="col col3" name="submit" value="science"  style="cursor: pointer;">
+                    <h2 style="font-family: 'Dongle', sans-serif; font-size: 3rem;">Science</h2>
+                    <i class="fa-solid fa-flask-vial"></i>
+                </button>
+
+                <button class="col col4" name="submit" value="IT"  style="cursor: pointer;">
+                    <h2 style="font-family: 'Dongle', sans-serif; font-size: 3rem;">IT</h2>
+                    <i class="fa-solid fa-robot"></i>
+                </button>
+
+                <button class="col col5" name="submit" value="geography"  style="cursor: pointer;">
+                    <h2 style="font-family: 'Dongle', sans-serif; font-size: 3rem;">Geography</h2>
+                    <i class="fa-solid fa-earth-americas"></i>
+                </button>
+
+                <button class="col col6" name="submit" value="history"  style="cursor: pointer;">
+                    <h2 style="font-family: 'Dongle', sans-serif; font-size: 3rem;">History</h2>
+                    <i class="fa-solid fa-clock"></i>
+                </button>
+            </form>
+       </main>
+       
+       <footer>
+        <div class="footer1">
+            <div class="footerLogo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="footerContent">
+                <h3>Quick Access</h3>
+                <h4><a href="home.html">Home</a></h4>
+                <h4><a href="createQuiz.php">Create Quiz</a></h4>
+                <h4><a href="searchbox.html">Search</a></h4>
+                <h4><a href="contact.php">Contact</a></h4>
+            </div>
+            <div class="footerContent">
+                <h3>Join Us</h3>
+                <h4><a href="signin.php">Sign in</a></h4>
+                <h4><a href="signup.php">Sign Up</a></h4>
+            </div>
+            <div class="footerContent">
+                <h3>Follow Us</h3>
+                <h4>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-snapchat"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </h4>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>&copy; 2023 QuizMe All Rights Reserved</p>
+        </div>
+       </footer>
+
+    </div>  
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+    <script src="burgermenu.js"></script>
+
+</body>
+</html>

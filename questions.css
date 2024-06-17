@@ -1,0 +1,206 @@
+html {
+    height:100%;
+    background-color: rgb(224, 224, 224);
+}
+
+body{
+    color: white;
+    font-family: 'Dongle', sans-serif;
+}
+
+.container{
+    min-width: 1024px;
+    background-color: rgb(237, 237, 237);
+    margin: auto;
+}
+
+header{
+    display: flex;
+    padding: 1rem 0rem 0rem 2rem;
+    height:10%; 
+    background-color: rgb(98, 184, 189);
+    border: 1px solid  rgb(84, 159, 163);
+    width: 75%;
+}
+
+h4{
+    font-size: 2.5rem;
+    display: inline-block;
+}
+
+header :nth-child(2), header :nth-child(3){
+    margin-left: 1rem;
+}
+
+main{
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.content{
+    width: 70%;
+}
+
+aside{
+    background-color: rgb(237, 237, 237);
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    right: 0;
+    border-left: 1px solid  rgb(137, 137, 137);
+    border-top: 1.5px solid  rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.question{
+    color:rgb(40, 40, 40);
+    font-size: 2rem;
+    margin: 1rem 1rem;
+}
+
+
+.scoreboard{
+    margin-top: 0.5rem;
+    align-items: space-between;
+    color: rgb(57, 56, 56);
+}
+
+.top3{
+    margin: 1.5rem 1.2rem;
+    display: flex;
+}
+
+.img{
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+.sideButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+button{
+    background-color: rgb(98, 184, 189); 
+    border: 1px solid  rgb(70, 146, 150);
+    border-radius: 5%;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+button:hover {
+    background-color: rgb(70, 146, 150); 
+}
+
+.rank{
+    margin-left: 3rem;
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+}
+
+.topInfo{
+    margin-left: 0.5rem;
+    min-width: 5rem;
+}
+
+.sbHeader{
+    display: flex;
+    justify-content: center;
+}
+
+/*Tablet view*/
+@media (max-width: 768px)
+{
+  header{
+    width:100%;
+  }
+  body{
+    width: 100%;
+  }
+  .container {
+    min-width: initial;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .content {
+    width: 100%;
+  }
+  aside {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-left: none;
+    border-top: none;
+  }
+}
+
+
+/*Mobile view*/
+@media (max-width: 400px)
+{
+
+  header {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body{
+    width: 100%;
+  }
+  h4 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  main {
+    margin: 1rem;
+    display: block;
+  }
+  .content {
+    width: 100%;
+  }
+  aside {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border: none;
+  }
+  .question {
+    font-size: 1.5rem;
+  }
+  .sideButtons {
+    margin: 1rem 0;
+  }
+  button {
+    margin: 0.5rem 0;
+  }
+  .rank {
+    font-size: 2rem;
+  }
+    
+    
+    
+    }
+
+
+
+

@@ -1,0 +1,243 @@
+html {
+    height:100%;
+    background-color:  rgb(224, 224, 224);
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: repeat;
+}
+
+body{
+    width: 100%;
+    color: rgb(51, 51, 51);
+    font-family: 'Dongle', sans-serif;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 32px;
+    color: rgb(51, 51, 51);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228);
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: 16px;
+}
+
+h3{
+    font-size: 3.5rem;
+}
+
+h4{
+    font-size: 3rem;
+}
+
+h5{
+    font-size: 1.5rem;
+}
+
+.container{
+    max-width: 100%;
+    background-color: silver;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color:   rgb(98, 184, 189);
+}
+
+.logo{
+    width: 10%;
+    padding-left: 16px;
+    margin: auto;
+}
+
+.logo img{
+    width: 100px;
+    height: 80px;
+}
+
+.navigation{ 
+    width: 40%;
+    display:flex;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 1.75rem;
+}
+
+.navBtn{
+    display: inline-block;
+    max-width: 130px;
+    margin: auto;
+    padding: 10px;
+    font-size: larger;
+}
+
+.navBtn a{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navBtn a:hover{
+    background-color:  rgb(47, 119, 123);
+    border-radius: 15px;
+}
+
+.log{
+    width: 20%;
+    margin: auto;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signBtn{
+    width: 27%;
+    background-color: #dde2e6;
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+
+.signBtn a{
+    text-decoration: none;
+}
+
+.signBtn:nth-child(3){
+    background-image: url(profile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.tablet-wrapper{
+    display: none;
+}
+
+footer{
+    min-height: 80px;
+    text-align: center;
+}
+
+.footer1{
+    background-color:  rgb(98, 184, 189);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    line-height: 24px;
+}
+
+.footerContent{
+    width: 15%;
+    margin: 16px;
+}
+
+.footerLogo{
+    width: 25%;
+}
+
+.footerLogo img{
+    width: 150px;
+    height: 120px;
+}
+
+footer h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+footer i{
+    font-size: 1rem;
+}
+
+.footer2{
+    background-color:rgb(98, 184, 189);
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+/*Tablet View*/
+@media (max-width: 768px){
+    .navigation, .log{
+        display: none;
+    }
+    
+    .burgermenu{
+        padding: 10px;
+    }
+
+    .tablet-wrapper{
+        display: block;
+        padding-right: 10px;
+    }
+    
+    nav{
+        position: relative;
+    }
+    
+    .tablet-nav{
+        display: none;
+        position: absolute;
+        z-index: 1000;
+    }
+    
+    .tabBtn{
+        display: block;
+        background-color: rgb(212, 212, 212);
+        border: solid black 1px;
+        padding: 8px 20px;
+        margin-left: -30px;
+        text-align: center; 
+    }
+
+    .tabBtn a{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .footerLogo img{
+        width: 120px;
+        height: 90px;
+    }
+
+    footer i{
+        font-size: 0.5rem;
+    }
+}
+
+/*Mobile View*/
+@media (max-width: 400px){
+    .footerLogo img{
+        width: 110px;
+        height: 80px;
+    }
+
+    footer h3{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    
+    footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
+}

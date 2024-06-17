@@ -1,0 +1,144 @@
+/* Sign Up Page */
+
+main{
+    max-width: 500px;
+    min-height: 600px;
+    margin: auto;
+    padding: 48px;
+    line-height: 1.5rem;
+    color: rgb(51, 51, 51);
+}
+
+main h1{
+    text-align: center;
+    font-size: 5rem;
+    line-height: 40px;
+}
+
+main form{
+    padding: 32px;
+    text-align: left;
+    background-color: rgba(98, 184, 189, 0.2);
+    border: 2px solid black;
+}
+
+form h2, form h5{
+    text-align: center;
+}
+
+.inputwrapper{
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.inputwrapper label{
+    font-size: 1.5rem;
+    display: block;
+}
+
+.inputwrapper input[type=text], .inputwrapper input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    display: block;
+}
+
+main input[type=submit]{
+    background-color: rgb(98, 184, 189);
+    color: white;
+    width: 25%;
+    padding: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 0.5px solid black;
+    display: block;
+}
+
+main a{
+    color: rgb(51, 51, 51);
+}
+
+main a:hover{
+    text-shadow: 2px 2px 2px rgba(51, 51, 51, 0.3);
+}
+
+/*Tablet View*/
+@media (max-width: 768px){
+    main h1{
+        font-size: 4rem;
+        line-height: 40px;
+    }
+
+    form h2{
+        font-size: 2.5rem;
+    }
+
+    form h5{
+        font-size: 1rem;
+    }
+
+    .inputwrapper input[type=text], .inputwrapper input[type=password]{
+        padding: 8px 16px;
+    }
+
+    main input[type=submit]{
+        width: 20%;
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+}
+
+/*Mobile View*/
+@media (max-width: 400px){
+    main h1{
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
+    form h2{
+        font-size: 2rem;
+    }
+
+    form h5{
+        font-size: 0.75rem;
+    }
+
+    main input[type=submit]{
+        width: 20%;
+        padding: 4px;
+        font-size: 0.6rem;
+    }
+
+    main p{
+        font-size: 0.75rem;
+    }
+}
+
+
+/* Validate */
+:root{
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+.inputwrapper.success input{
+    border-color: var(--success-color);
+}
+  
+.inputwrapper.error input{
+    border-color: var(--error-color);
+}
+
+.inputwrapper small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+  
+.inputwrapper.error small{
+    visibility: visible;
+}
